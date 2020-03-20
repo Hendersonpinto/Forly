@@ -1,0 +1,7 @@
+$primary: teal;    // THIS IS A EASY WAY WITH SASS TO CHANGE THE STYLE PROPERTIES OF BOOTSTRAP, THE RULE IS TO CHANGE THEM BEFORE WE LOAD BOOTSTRAP
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    background-color: red;
+}
