@@ -1,0 +1,38 @@
+.section {
+	width: 100%;
+
+	&.section--howitworks {
+		margin-top: 100px;
+
+		text-align: center;
+
+		.cards {
+			margin-top: 50px;
+			display: flex;
+			justify-content: space-around;
+			.card {
+				-webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+				-moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+				box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+				color: $dark-blue;
+				border-radius: 10px;
+				width: 15rem;
+				.card-img-top {
+					border-radius: 10px 10px 0px 0px;
+					height: 55%;
+				}
+				.card-body {
+					display: flex;
+					flex-direction: column;
+					font-family: sans-serif;
+					h3 {
+						font-size: 24px;
+					}
+					.card-label {
+						color: $green;
+					}
+				}
+			}
+		}
+	}
+}

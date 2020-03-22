@@ -1,0 +1,14 @@
+.section--messageright {
+	.message {
+		width: 50%;
+		justify-content: space-around;
+		.buttonsarea {
+			display: flex;
+			justify-content: center;
+			img {
+				width: 30%;
+				margin-right: 20px;
+			}
+		}
+	}
+}

@@ -1,0 +1,53 @@
+.banner {
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	.banner__bg {
+		position: absolute;
+		top: 0;
+		z-index: -10;
+		img {
+			width: 100%;
+		}
+	}
+
+	.banner__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		// height: 120vh;
+		min-height: 50vh;
+		margin-top: 150px;
+		.banner__title {
+			text-align: center;
+			margin-bottom: 20px;
+			h1 {
+				font-family: $slabo;
+				letter-spacing: 2px;
+				color: $dark-blue;
+			}
+		}
+
+		.banner__button {
+			transition: all 500ms ease-in-out;
+			margin-bottom: 30px;
+			&:hover {
+				transform: scale(1.1);
+				background-color: $dark-blue;
+			}
+		}
+		.banner__mockup {
+			width: 100%;
+			overflow: hidden;
+			display: flex;
+			img {
+				width: 40%;
+				margin: 0 auto;
+			}
+		}
+	}
+}
