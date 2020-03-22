@@ -1,4 +1,5 @@
 .section--messageleft {
+	position: relative;
 	margin-bottom: 150px;
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -13,5 +14,9 @@
 	}
 	.message {
 		transform: skew(0deg, 5deg);
+	}
+	#womanrun {
+		position: absolute;
+		opacity: 0;
 	}
 }
