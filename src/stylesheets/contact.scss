@@ -46,4 +46,42 @@
 			}
 		}
 	}
+
+	@media only screen and (max-width: 576px) {
+		.contact__title {
+			width: 80%;
+			h2 {
+				font-size: 24px;
+			}
+			p {
+				font-size: 16px;
+				line-height: 1.2;
+				letter-spacing: 0.5px;
+			}
+		}
+
+		.contact__content {
+			display: grid;
+			grid-template-areas:
+				'form'
+				'label';
+			padding: 10px;
+			grid-row-gap: 40px;
+
+			.contact__form {
+				grid-area: form;
+				width: 100%;
+				#formbutton {
+					width: 100%;
+				}
+			}
+
+			.contact__form-message {
+				grid-area: label;
+				text-align: center;
+				display: none;
+				width: 100%;
+			}
+		}
+	}
 }

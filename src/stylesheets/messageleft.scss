@@ -9,14 +9,52 @@
 	.section__bg {
 		transform: skew(0deg, 5deg);
 	}
-	.dinner {
-		transform: skew(0deg, 5deg);
-	}
-	.message {
-		transform: skew(0deg, 5deg);
+
+	.mymessage {
+		display: flex;
+		justify-content: space-between;
+
+		.dinner {
+			transform: skew(0deg, 5deg);
+		}
+		.message {
+			transform: skew(0deg, 5deg);
+		}
 	}
 	#womanrun {
 		position: absolute;
 		opacity: 0;
+	}
+
+	@media only screen and (max-width: 576px) {
+		padding-top: 0px;
+		padding-bottom: 0px;
+		margin-bottom: 75px;
+		.mymessage {
+			display: grid;
+			grid-template-areas:
+				'image'
+				'message';
+			padding: 10px;
+			.dinner {
+				grid-area: image;
+				margin: auto;
+				width: 80%;
+			}
+			.message {
+				grid-area: message;
+				margin: auto;
+				width: 80%;
+				h2 {
+					font-size: 24px;
+				}
+				h4 {
+					font-size: 16px;
+				}
+				span {
+					font-size: 14px;
+				}
+			}
+		}
 	}
 }

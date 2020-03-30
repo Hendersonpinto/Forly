@@ -1,13 +1,51 @@
 .section--messageright {
-	.message {
-		width: 50%;
-		justify-content: space-around;
-		.buttonsarea {
-			display: flex;
-			justify-content: center;
-			img {
-				width: 30%;
-				margin-right: 20px;
+	.mymessage {
+		display: flex;
+		justify-content: space-between;
+		.dinner {
+			grid-area: image;
+			margin: auto;
+		}
+		.message {
+			grid-area: message;
+			width: 50%;
+			justify-content: space-around;
+			margin: auto;
+			.buttonsarea {
+				display: flex;
+				justify-content: center;
+				img {
+					width: 30%;
+					margin-right: 20px;
+				}
+			}
+		}
+
+		@media only screen and (max-width: 576px) {
+			// grid-template-columns: auto;
+			display: grid;
+			grid-template-areas:
+				'image'
+				'message';
+			padding: 10px;
+			.dinner {
+				grid-area: image;
+				margin: auto;
+				width: 80%;
+			}
+			.message {
+				grid-area: message;
+				margin: auto;
+				width: 80%;
+				h2 {
+					font-size: 24px;
+				}
+				h4 {
+					font-size: 16px;
+				}
+				span {
+					font-size: 14px;
+				}
 			}
 		}
 	}
