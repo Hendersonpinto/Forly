@@ -84,4 +84,24 @@
 			}
 		}
 	}
+
+	@media only screen and (min-width: 577px) and (max-width: 1025px) {
+		.contact__content {
+			.contact__form {
+				width: 60%;
+				margin-right: 25px;
+				#formbutton {
+					width: 100%;
+				}
+			}
+
+			.contact__form-message {
+			}
+		}
+	}
+	@media only screen and (min-width: 1700px) {
+		.container {
+			max-width: 1500px !important;
+		}
+	}
 }

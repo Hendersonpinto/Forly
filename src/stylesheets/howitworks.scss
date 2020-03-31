@@ -69,5 +69,18 @@
 				}
 			}
 		}
+
+		@media only screen and (min-width: 577px) and (max-width: 1025px) {
+			margin-top: 0px;
+			.card-text {
+				display: none;
+			}
+		}
+
+		@media only screen and (min-width: 1700px) {
+			.container {
+				max-width: 1500px !important;
+			}
+		}
 	}
 }

@@ -1,7 +1,7 @@
 .myfooter {
 	width: 100%;
 	position: relative;
-	height: 100vh;
+	height: 700px;
 	display: flex;
 	align-items: end;
 	justify-content: center;
@@ -106,5 +106,12 @@
 				}
 			}
 		}
+	}
+	@media only screen and (min-width: 577px) and (max-width: 800px) {
+		height: 500px;
+	}
+	@media only screen and (min-width: 1700px) {
+		margin-top: 150px;
+		height: 500px;
 	}
 }
