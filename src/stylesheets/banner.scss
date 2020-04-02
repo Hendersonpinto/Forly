@@ -25,6 +25,7 @@
 		// height: 120vh;
 		min-height: 50vh;
 		margin-top: 150px;
+
 		.banner__title {
 			text-align: center;
 			margin-bottom: 20px;
@@ -32,6 +33,7 @@
 				font-family: $slabo;
 				letter-spacing: 2px;
 				color: $dark-blue;
+				font-size: 40px;
 			}
 		}
 
@@ -44,11 +46,12 @@
 			}
 		}
 		.banner__mockup {
+			flex-grow: 1;
 			width: 100%;
 			overflow: hidden;
 			display: flex;
 			img {
-				width: 200px;
+				width: 100%;
 				margin: 0 auto;
 			}
 		}
@@ -61,7 +64,7 @@
 		.banner__content {
 			margin-top: 100px;
 			h1 {
-				font-size: 12vw;
+				font-size: 10vw;
 			}
 			.banner__button {
 				font-size: 16px;
@@ -85,12 +88,14 @@
 	}
 
 	@media only screen and (min-width: 1500px) {
-		h1 {
-			font-size: 5vw;
-		}
 		.banner__content {
 			#mockup {
-				width: 350px;
+				width: 300px;
+			}
+			.banner__title {
+				h1 {
+					font-size: 4vw;
+				}
 			}
 			.banner__button {
 				font-size: 32px;
