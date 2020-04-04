@@ -2,7 +2,7 @@
 	width: 100%;
 
 	&.section--howitworks {
-		margin-top: 100px;
+		margin-top: 50px;
 
 		text-align: center;
 
@@ -12,7 +12,8 @@
 			justify-content: space-around;
 			.card {
 				padding: 20px 0px;
-				background-color: aliceblue;
+				// background-color: #ecfbf8;
+				background-color: #ecfbf83d;
 				-webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
 				-moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
 				box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
@@ -37,7 +38,7 @@
 						line-height: 1.2;
 					}
 					.card-label {
-						color: $green;
+						color: $dark-green;
 					}
 				}
 			}
@@ -45,11 +46,12 @@
 			@media only screen and (max-width: 576px) {
 				display: grid;
 				grid-row-gap: 20px;
-				grid-template-columns: auto;
+				grid-template-columns: auto auto;
 				padding: 10px;
 				.card {
 					margin: auto;
-					width: 60%;
+					height: 190px;
+					width: 90%;
 					display: flex;
 					flex-direction: column;
 					justify-content: center;
@@ -63,6 +65,7 @@
 							font-size: 20px;
 						}
 						p {
+							display: none;
 							font-size: 14px;
 						}
 					}

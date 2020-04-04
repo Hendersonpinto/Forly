@@ -2,9 +2,12 @@
 	.mymessage {
 		display: flex;
 		justify-content: space-between;
-		.dinner {
+		.image {
 			grid-area: image;
 			margin: auto;
+			img {
+				transform: scaleX(-1);
+			}
 		}
 		.message {
 			grid-area: message;
@@ -28,7 +31,7 @@
 				'image'
 				'message';
 			padding: 10px;
-			.dinner {
+			.image {
 				grid-area: image;
 				margin: auto;
 				width: 80%;
@@ -41,7 +44,9 @@
 					font-size: 24px;
 				}
 				h4 {
-					font-size: 16px;
+					// font-size: 16px;
+					font-size: 20px;
+					color: $mylight-gray;
 				}
 				span {
 					font-size: 14px;

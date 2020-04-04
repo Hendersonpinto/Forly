@@ -1,0 +1,41 @@
+.section--forPartners {
+	// height: 100vh;
+	transform: skew(0deg, 5deg) translateY(120px);
+
+	.section__wrapper {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row-reverse;
+		align-items: center;
+
+		.section__message {
+			transform: skew(0deg, -5deg);
+			width: 50%;
+			text-align: center;
+		}
+		.section__image {
+			transform: skew(0deg, -5deg);
+			width: 40%;
+			margin: auto;
+			display: flex;
+			img {
+				width: 80%;
+				margin: auto;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 576px) {
+		height: auto;
+		.section__wrapper {
+			.section__message {
+			}
+			.section__image {
+				width: 50%;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

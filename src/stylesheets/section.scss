@@ -12,7 +12,7 @@
 		}
 	}
 
-	.dinner {
+	.image {
 		z-index: 2;
 		width: 40%;
 		img {
@@ -29,7 +29,7 @@
 		align-items: center;
 		text-align: center;
 		.greentext {
-			color: #00ffab;
+			color: $dark-green;
 			font-size: 20px;
 			font-weight: 500;
 		}
@@ -37,9 +37,22 @@
 
 	@media only screen and (max-width: 576px) {
 		padding: 0px;
+		.section__bg {
+			top: 80px;
+		}
+		.image {
+			img {
+				height: auto;
+			}
+		}
 	}
 	@media only screen and (min-width: 577px) and (max-width: 1025px) {
 		padding: 0px;
+		.image {
+			img {
+				height: auto;
+			}
+		}
 	}
 	@media only screen and (min-width: 1700px) {
 		.container {
