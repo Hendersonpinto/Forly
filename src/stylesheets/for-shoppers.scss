@@ -1,5 +1,8 @@
 .section--forShoppers {
 	// height: 100vh;
+	.message-mobile {
+		display: none;
+	}
 	.section__wrapper {
 		display: flex;
 		justify-content: space-between;
@@ -26,12 +29,25 @@
 		height: auto;
 		.section__wrapper {
 			.section__message {
+				h4 {
+					display: none;
+				}
 			}
 			.section__image {
 				width: 50%;
 				img {
 					width: 100%;
 				}
+			}
+		}
+		.message-mobile {
+			margin-top: 30px;
+			padding: 0px 25px;
+			display: block;
+			text-align: center;
+			h4 {
+				color: $mylight-gray;
+				font-size: 16px;
 			}
 		}
 	}
