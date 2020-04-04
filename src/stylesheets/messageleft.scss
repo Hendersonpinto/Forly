@@ -1,20 +1,9 @@
 .section--messageleft {
-	position: relative;
-	margin-bottom: 150px;
-	padding-top: 50px;
-	padding-bottom: 50px;
-
-	background-color: $light-green;
-	transform: skew(0deg, -5deg) translateY(120px);
-	.section__bg {
-		transform: skew(0deg, 5deg);
-	}
-
 	.mymessage {
 		display: flex;
 		justify-content: space-between;
 
-		.dinner {
+		.image {
 			transform: skew(0deg, 5deg);
 		}
 		.message {
@@ -36,7 +25,7 @@
 				'image'
 				'message';
 			padding: 10px;
-			.dinner {
+			.image {
 				grid-area: image;
 				margin: auto;
 				width: 80%;
@@ -50,6 +39,7 @@
 				}
 				h4 {
 					font-size: 16px;
+					color: $mydark-gray;
 				}
 				span {
 					font-size: 14px;

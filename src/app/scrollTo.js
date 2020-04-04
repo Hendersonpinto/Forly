@@ -2,7 +2,8 @@ export const scrollTo = () => {
 	const navLinks = document.querySelectorAll('.nav-link');
 	const sections = {
 		howItWorks: document.querySelector('.section--howitworks'),
-		downloadApp: document.querySelector('.section--messageright'),
+		forPartners: document.querySelector('.section--forPartners'),
+		forShoppers: document.querySelector('.section--forShoppers'),
 		contact: document.querySelector('.contact')
 	};
 

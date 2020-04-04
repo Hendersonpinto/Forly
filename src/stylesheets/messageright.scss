@@ -2,9 +2,12 @@
 	.mymessage {
 		display: flex;
 		justify-content: space-between;
-		.dinner {
+		.image {
 			grid-area: image;
 			margin: auto;
+			img {
+				transform: scaleX(-1);
+			}
 		}
 		.message {
 			grid-area: message;
@@ -28,7 +31,7 @@
 				'image'
 				'message';
 			padding: 10px;
-			.dinner {
+			.image {
 				grid-area: image;
 				margin: auto;
 				width: 80%;

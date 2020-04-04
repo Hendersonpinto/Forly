@@ -1,0 +1,21 @@
+.section--forShoppers {
+	height: 100vh;
+	.section__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.section__message {
+			width: 50%;
+			text-align: center;
+		}
+		.section__image {
+			width: 40%;
+			margin: auto;
+			display: flex;
+			img {
+				width: 80%;
+				margin: auto;
+			}
+		}
+	}
+}
