@@ -29,11 +29,14 @@
 
 		#carouselForly {
 			width: 100%;
-			.carousel-item {
-				.carousel-wrapper {
-					display: flex;
-					justify-content: center;
-					align-items: center;
+			.carousel-inner {
+				overflow: visible;
+				.carousel-item {
+					.carousel-wrapper {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
 				}
 			}
 		}
@@ -127,11 +130,11 @@
 			}
 			.banner__title {
 				h1 {
-					font-size: 70px;
+					font-size: 60px;
 				}
 			}
 			.banner__button {
-				font-size: 32px;
+				font-size: 28px;
 			}
 		}
 	}
