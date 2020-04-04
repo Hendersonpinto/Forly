@@ -18,9 +18,6 @@ export const activeButton = () => {
 	const contactSectionBottom = contactSectionTop + contactSection.offsetHeight;
 	const breakpoint = document.querySelector('.banner').offsetHeight - 250;
 
-	console.log(forPartnersSection.offsetTop);
-	console.log(forShoppersSection.offsetTop);
-
 	function activeButton() {
 		const currentScrollPos = window.pageYOffset;
 		if (currentScrollPos > breakpoint) {
