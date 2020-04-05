@@ -5,9 +5,9 @@
 		.image {
 			grid-area: image;
 			margin: auto;
-			img {
-				transform: scaleX(-1);
-			}
+			// img {
+			// 	transform: scaleX(-1);
+			// }
 		}
 		.message {
 			grid-area: message;
