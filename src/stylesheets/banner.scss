@@ -36,6 +36,15 @@
 						display: flex;
 						justify-content: center;
 						align-items: center;
+						.banner__mockup {
+							-webkit-mask-image: -webkit-gradient(
+								linear,
+								left 70%,
+								left 80%,
+								from(black),
+								to(rgba(0, 0, 0, 0))
+							);
+						}
 					}
 				}
 			}
@@ -105,6 +114,13 @@
 							width: 60%;
 							#mockup {
 								width: 100%;
+								mask-image: -webkit-gradient(
+									linear,
+									left top,
+									left bottom,
+									from(rgba(0, 0, 0, 1)),
+									to(rgba(0, 0, 0, 0))
+								);
 							}
 						}
 					}
