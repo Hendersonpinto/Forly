@@ -31,6 +31,12 @@ module.exports = {
 						outputPath: 'images'
 					}
 				}
+			},
+			{
+				test: /\.webp$/, // What type of assets include
+				use: {
+					loader: 'webp-loader'
+				}
 			}
 		]
 	}
