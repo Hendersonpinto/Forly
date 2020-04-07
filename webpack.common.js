@@ -27,15 +27,9 @@ module.exports = {
 				use: {
 					loader: 'file-loader', // When encounter one of those files, this loader is needed for html-loader to work. This handles all the require statements
 					options: {
-						name: '[name].[ext]', // Each asset will have a hash in their name so it loads only if we change the file
+						name: '[name].[hash].[ext]', // Each asset will have a hash in their name so it loads only if we change the file
 						outputPath: 'images'
 					}
-				}
-			},
-			{
-				test: /\.webp$/, // What type of assets include
-				use: {
-					loader: 'webp-loader'
 				}
 			}
 		]
