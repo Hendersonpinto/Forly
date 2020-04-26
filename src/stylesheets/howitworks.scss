@@ -85,6 +85,9 @@
       .container {
         max-width: 1500px !important;
       }
+      .cards {
+        grid-column-gap: 40px;
+      }
     }
   }
 }
