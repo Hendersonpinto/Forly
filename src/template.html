@@ -13,6 +13,11 @@
 		<script src="https://kit.fontawesome.com/448b893985.js" crossorigin="anonymous"></script>
 	</head>
 
+
+
+	
+
+
 	<body>
 		<!-- NAVBAR -->
 		<nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -66,17 +71,7 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
-				<!-- <ul class="navbar-nav">
-					<li class="nav-item" id="howitworks">
-						<a class="nav-link" href="#" data-linkto="howItWorks">How it works</a>
-					</li>
-					<li class="nav-item" id="contact">
-						<a class="nav-link" href="#" data-linkto="contact">Get in touch!</a>
-					</li>
-					<li class="nav-item" id="about">
-						<a class="nav-link" href="#">About us</a>
-					</li>
-				</ul> -->
+
 				<ul class="navbar-nav">
 					<li class="nav-item" id="howitworks">
 						<a class="nav-link" href="#" data-linkto="howItWorks">How it works</a>
@@ -192,8 +187,8 @@
 		<div class="section section--howitworks">
 			<div class="container">
 				<h2>How it works...</h2>
-				<div class="cards">
-					<div class="card">
+				<div class="cards slide-section">
+					<div class="card slide slide-right">
 						<img class="card-img-top" src="./assets/store.svg" alt="Card image cap" />
 						<div class="card__body">
 							<h3>Choose your favorite store</h3>
@@ -201,16 +196,16 @@
 								Support your old good friend store or discover new places to get your products from</p>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card slide slide-up">
 						<img class="card-img-top" src="./assets/bread.svg" alt="Card image cap" />
 						<div class="card__body">
-							<h3>Compare and select products</h3>
+							<h3>Compare products</h3>
 							<p class="card-text">
 								Hundreds of local products, all of them in a single place inside of our digital catalog.
 							</p>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card slide slide-up">
 						<img class="card-img-top" src="./assets/mobile.svg" alt="Card image cap" />
 						<div class="card__body">
 							<h3>Pay through our app</h3>
@@ -219,10 +214,10 @@
 							</p>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card slide slide-left">
 						<img class="card-img-top" src="./assets/bike2.svg" alt="Card image cap" />
 						<div class="card__body">
-							<h3>We deliver in a matter of minutes</h3>
+							<h3>We deliver in minutes</h3>
 							<p class="card-text">
 								100% environmentally friendly delivery thanks to our dedicated shoppers
 							</p>
@@ -231,6 +226,24 @@
 				</div>
 			</div>
 		</div>
+		
+		<div class="section section--demovideo">
+			<div class=video__container>
+				<div class="video__card">
+					<div class="card__content">
+						<h3>What is forly?</h3>
+						<h1>We bring happiness right to your doorstep</h1>
+						<p>Choose a store and send your order. 
+							We'll deliver that juicy taco or vegan burger to you in 60 minutes. 
+							Forly make groceries way much easier.</p>
+							<button class="video-button btn btn-primary">Show me more</button>
+					</div>
+	
+					<img src="./assets/Bikeforly2.png">
+				</h3>
+			</div>
+		</div>
+
 
 		<div class="section section--messageleft section--skewed">
 			<div class="section__bg">
@@ -272,9 +285,9 @@
 			</div>
 		</div>
 
-		<div class="section section--skewed section--forPartners">
+		<div class="section section--skewed slide-section section--forPartners">
 			<div class="container section__wrapper">
-				<div class="section__image">
+				<div class="section__image slide slide-left">
 					
 					<img srcset="./assets/store-w175.png 175w,
 					./assets/store-w300.png 300w" 
@@ -282,7 +295,7 @@
 					300px"
 					src="./assets/store-w300.png">
 				</div>
-				<div class="section__message">
+				<div class="section__message slide slide-right">
 					<h2>Expand your business with Forly.</h2>
 					<h4>
 						Forly is a delivery platform that connects customers with great local stores and ambitious shoppers. We grow your business by helping thousands of people find your products and by making it safe to get them.
@@ -296,16 +309,16 @@
 			</div>
 		</div>
 
-		<div class="section section--forShoppers">
+		<div class="section slide-section section--forShoppers">
 			<div class="container section__wrapper">
-				<div class="section__image">
+				<div class="section__image slide slide-right">
 					<img srcset="./assets/shopper-w175.png 175w,
 					./assets/shopper-w300.png 300w" 
      				sizes="(max-width: 577px) 100px,
 					300px"
 					src="./assets/shopper-w300.png">
 				</div>
-				<div class="section__message">
+				<div class="section__message slide slide-left">
 					<h2>Make money, whenever it fits you.</h2>
 					<h4>
 						As a Forly-shopper, you earn money by delivering goods to people’s homes. Deliver in the evenings, for a few hours during lunches – or whenever you feel like it.

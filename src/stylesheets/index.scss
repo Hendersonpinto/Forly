@@ -1,17 +1,18 @@
-@import 'myvariables.scss'; // I NEED TO IMPORT MY VARIABLES BEFORE IMPORTING THE BOOTSTRAP
-@import '~bootstrap/scss/bootstrap'; // This will only import the CSS from bootstrap not the javascript
-@import 'navbar.scss';
-@import 'banner.scss';
-@import 'howitworks.scss';
-@import 'section';
-@import 'messageleft.scss';
-@import 'messageright.scss';
-@import 'footer-card.scss';
-@import 'footer.scss';
-@import 'contact.scss';
-@import 'sectionskewed.scss';
-@import 'for-partners.scss';
-@import 'for-shoppers.scss';
+@import "myvariables.scss"; // I NEED TO IMPORT MY VARIABLES BEFORE IMPORTING THE BOOTSTRAP
+@import "~bootstrap/scss/bootstrap"; // This will only import the CSS from bootstrap not the javascript
+@import "navbar.scss";
+@import "banner.scss";
+@import "howitworks.scss";
+@import "section";
+@import "messageleft.scss";
+@import "messageright.scss";
+@import "footer-card.scss";
+@import "footer.scss";
+@import "contact.scss";
+@import "sectionskewed.scss";
+@import "for-partners.scss";
+@import "for-shoppers.scss";
+@import "demo-video.scss";
 
 // $primary: teal; // THIS IS A EASY WAY WITH SASS TO CHANGE THE STYLE PROPERTIES OF BOOTSTRAP, THE RULE IS TO CHANGE THEM BEFORE WE LOAD BOOTSTRAP
 
@@ -20,39 +21,39 @@
 // }
 
 html {
-	display: block;
-	box-sizing: border-box;
+  display: block;
+  box-sizing: border-box;
 
-	body {
-		font-family: $font-family-base;
-		position: relative;
-		margin: 0px;
-		padding: 0px;
-		// min-height: 400vh;
-		color: $dark-blue;
-		h1 {
-			font-size: 40px;
-		}
-		h2 {
-			font-size: 36;
-		}
+  body {
+    font-family: $font-family-base;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    // min-height: 400vh;
+    color: $dark-blue;
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 36;
+    }
 
-		h4 {
-			// color: $mylight-gray;
-			color: $mydark-gray;
-			font-weight: 400;
-			font-size: 20px;
-		}
+    h4 {
+      // color: $mylight-gray;
+      color: $mydark-gray;
+      font-weight: 400;
+      font-size: 20px;
+    }
 
-		@media only screen and (max-width: 576px) {
-			p {
-				font-size: 16px;
-				letter-spacing: 0.5px;
-			}
+    @media only screen and (max-width: 576px) {
+      p {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+      }
 
-			h4 {
-				letter-spacing: 0.5px;
-			}
-		}
-	}
+      h4 {
+        letter-spacing: 0.5px;
+      }
+    }
+  }
 }

@@ -1,58 +1,77 @@
 .section--forPartners {
-	// height: 100vh;
-	transform: skew(0deg, 5deg) translateY(120px);
+  // height: 100vh;
+  transform: skew(0deg, 5deg) translateY(120px);
 
-	.message-mobile {
-		display: none;
-	}
-	.section__wrapper {
-		display: flex;
-		justify-content: space-between;
-		flex-direction: row-reverse;
-		align-items: center;
+  .message-mobile {
+    display: none;
+  }
+  .section__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
 
-		.section__message {
-			transform: skew(0deg, -5deg);
-			width: 50%;
-			text-align: center;
-		}
-		.section__image {
-			transform: skew(0deg, -5deg);
-			width: 40%;
-			margin: auto;
-			display: flex;
-			img {
-				width: 60%;
-				margin: auto;
-			}
-		}
-	}
+    .section__message {
+      transform: skew(0deg, -5deg);
+      width: 50%;
+      text-align: center;
+      transition: all 1.3s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
 
-	@media only screen and (max-width: 576px) {
-		height: 450px;
-		.section__wrapper {
-			.section__message {
-				h4 {
-					display: none;
-				}
-			}
-			.section__image {
-				width: 50%;
-				img {
-					width: 125px;
-					height: 240px;
-				}
-			}
-		}
-		.message-mobile {
-			margin-top: 30px;
-			padding: 0px 25px;
-			display: block;
-			transform: skew(0deg, -5deg);
-			text-align: center;
-			h4 {
-				font-size: 16px;
-			}
-		}
-	}
+      &.slide-right {
+        transform: translateX(-130px) scale(0.9) skew(0deg, -5deg);
+        opacity: 0;
+        &.active {
+          transform: translateX(0) scale(1) skew(0deg, -5deg);
+          opacity: 1;
+        }
+      }
+    }
+    .section__image {
+      transform: skew(0deg, -5deg);
+      width: 40%;
+      margin: auto;
+      display: flex;
+      transition: all 1.3s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+      &.slide-left {
+        transform: translateX(130px) scale(0.9) skew(0deg, -5deg);
+        opacity: 0;
+        &.active {
+          transform: translateX(0) scale(1) skew(0deg, -5deg);
+          opacity: 1;
+        }
+      }
+      img {
+        width: 60%;
+        margin: auto;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    height: 450px;
+    .section__wrapper {
+      .section__message {
+        h4 {
+          display: none;
+        }
+      }
+      .section__image {
+        width: 50%;
+        img {
+          width: 125px;
+          height: 240px;
+        }
+      }
+    }
+    .message-mobile {
+      margin-top: 30px;
+      padding: 0px 25px;
+      display: block;
+      transform: skew(0deg, -5deg);
+      text-align: center;
+      h4 {
+        font-size: 16px;
+      }
+    }
+  }
 }
