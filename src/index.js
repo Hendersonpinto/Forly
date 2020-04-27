@@ -5,10 +5,12 @@ import { slideIn } from "./app/slideIn";
 import "./stylesheets/index.scss"; // This is how I include the css to the webpack so it then can include it to the HTML
 import { changeContent } from "./app/changeContent";
 import { activeButton } from "./app/activeButton";
+import { playVideo } from "./app/playVideo";
 
 window.addEventListener("load", () => {
   activeButton();
   scrollTo();
   changeContent();
   slideIn();
+  playVideo();
 });

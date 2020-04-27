@@ -1,13 +1,33 @@
 .section--demovideo {
   height: 100%;
   .video__container {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
-    // overflow: hidden;
     .video__card {
+      position: relative;
+      overflow: hidden;
       height: 500px;
       box-shadow: 0px 0px 50px 0px rgba(34, 33, 37, 0.06);
       display: flex;
+
+      .video__toggler {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 30px;
+        right: 50px;
+        opacity: 0;
+        transition: all 3s ease;
+        transform: scale(0.1);
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 99;
+
+        &.activo {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
 
       .card__content {
         width: 50%;
@@ -15,19 +35,79 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        transition: all 3s ease;
+
+        h3 {
+          font-size: 1.2rem;
+        }
+        h1 {
+          font-size: 36px;
+        }
+        p {
+          color: $mydark-gray;
+        }
+        &.hidden {
+          transform: translateX(-500px);
+          width: 0;
+          padding: 0;
+        }
 
         .video-button {
-          width: 30%;
+          width: 150px;
         }
       }
 
-      .iframevideo {
+      .forly-video {
+        flex-grow: 1;
         width: 50%;
       }
     }
   }
 
   @media only screen and (max-width: 576px) {
-    display: none;
+    margin-top: 50px;
+    .video__container {
+      width: 90%;
+      .video__card {
+        flex-direction: column;
+        height: auto;
+        box-shadow: 0px 0px 50px 0px rgba(34, 33, 37, 0.2);
+        .video__toggler {
+          top: 20px;
+          right: 20px;
+          width: 30px;
+          height: 30px;
+        }
+        .card__content {
+          position: absolute;
+          width: 100%;
+          padding: 20px;
+          text-align: center;
+          align-items: center;
+          z-index: 99;
+          background-color: whitesmoke;
+          height: 100%;
+          &.hidden {
+            transform: translateX(-500px);
+            width: 0;
+            padding: 0;
+          }
+          h3 {
+            font-size: 1rem;
+          }
+          h1 {
+            font-size: 24px;
+          }
+          p {
+            display: none;
+          }
+          .video-button {
+          }
+        }
+        .forly-video {
+          width: 100%;
+        }
+      }
+    }
   }
 }
